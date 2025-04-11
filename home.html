@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Perhitungan Diskon</title>
+    <script src="script.js"> </script>
+</head>
+<body>
+    <div class="container">
+        <h2><center>Perhitungan Diskon</center></h2>
+        <form onsubmit="event.preventDefault(); hitungDiskon();">
+            <input type="text" id="harga_awal" placeholder="Masukkan Nilai Harga (Rp)" required oninput="formatRibuan (this)">
+            <input type="number" id="persen_diskon" placeholder="Masukkan Nilai Diskon (%)" min="0" max="100" required >
+            <button type="submit">Hitung</button>
+        </form>
+        <div id="hasil"></div>
+    </div>
+</body>
+</html>
